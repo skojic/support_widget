@@ -1,0 +1,79 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta 
+      name="viewport" 
+      content="width=device-width, 
+              initial-scale=1, 
+              shrink-to-fit=no"
+    >
+    <!-- Bootstrap CSS -->
+    <link 
+      rel="stylesheet" 
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" 
+      crossorigin="anonymous"
+      >
+    <link 
+      rel="stylesheet" 
+      type="text/css" 
+      href="style.css"
+      >
+    <title>Fjellinjen</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="image"><img src="fj_logo.png" alt="Fjellinjen Logo"></div>
+      <div class="typewriter">
+          <h1>Kunderådgiver Brukerstøtte</h1>
+      </div>
+      <div class="embeded-internal-widget">
+        <!-- nanorep embedded widget -->
+        <div id="nanorep-embedded-widget"></div>
+          <script>
+            !function(t,e,o,c,n,a){var s=window.nanorep=window.nanorep||{};s=s[e]=s[e]||
+            {},s.apiHost=a,s.host=n,s.path=c,s.account=t,s.protocol="https:"===location.protocol?
+            "https:":"http:",s.on=s.on||function(){s._calls=s._calls||
+            [],s._calls.push([].slice.call(arguments))};
+            var p=s.protocol+"//"+n+c+o+"?account="+t,l=document.createElement("script");
+            l.async=l.defer=!0,l.setAttribute("src",p),document.getElementsByTagName("head")
+            [0].appendChild(l)}("fjellinjen","embeddedWidget","embedded-widget.js","/web/","fjellinjen.nanorep.co");
+          </script>
+          <script>
+            nanorep.embeddedWidget.on({
+              init: function() {
+                  this.setConfigId('1213591882');
+                  this.setKB('1213590942');
+              }
+            });
+          </script>
+          <!-- //nanorep embedded widget -->
+      </div>
+        <div>
+          <p class="title">Most viewed:</p>
+        </div>
+        <!--FAQ dynamic widget for most viewed articles START-->
+        <div id='nrMPContainer_19909'>
+          <script type='text/javascript'>
+            var _nRepData = window._nRepData || [];
+              /* API here */;
+            _nRepData.MPWidgets = _nRepData.MPWidgets || {}; 
+            _nRepData.MPWidgets.Data = _nRepData.MPWidgets.Data || []; 
+            _nRepData.MPWidgets.Data.push({account: 'fjellinjen', days: 30, items: 5, kb: '1213590942' , 
+            container: 'nrMPContainer_19909', rtl: false});
+            (function (){if (!_nRepData.MPWidgets.mpScriptLoaded)
+            {_nRepData.MPWidgets.mpScriptLoaded = true;var sc = document.createElement('script'); 
+            sc.type = 'text/javascript'; sc.async = true; sc.defer = true;sc.src = 
+            ('https:' == document.location.protocol ? 
+            'https://' : 'http://') + 'my.nanorep.com/widget/scripts/faqWrapper.js';
+            var _head = document.getElementsByTagName('head')[0]; _head.appendChild(sc);} 
+            else { if (typeof(nanoRep)!='undefined') if (typeof(nanoRep.MPWidget)!='undefined') 
+            nanoRep.MPWidget.loadMPData(_nRepData.MPWidgets.Data.length-1); }})();
+          </script>
+        </div>
+        <!--FAQ dynamic widget for most viewed articles END-->
+    </div>
+  </body>
+</html>
